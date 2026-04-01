@@ -13,27 +13,37 @@ SAMPLE_CASES = [
     ("0\n\n", "\n"),
 ]
 
+def check(solver) -> bool:
+    """Run built-in test cases against solver(input_str) -> output_str."""
+    def _normalize(text: str) -> str:
+        lines = [line.rstrip() for line in text.splitlines()]
+        while lines and lines[-1] == "":
+            lines.pop()
+        return "\n".join(lines)
 
-def reverse_list_core(nums):
-    """LeetCode core logic placeholder: input list, output reversed list."""
-    # TODO: Replace with your own LeetCode core implementation.
-    return nums[::-1]
+    all_passed = True
+    for i, (inp, expected) in enumerate(SAMPLE_CASES, start=1):
+        actual = solver(inp)
+        if _normalize(actual) != _normalize(expected):
+            all_passed = False
+            print(f"[FAIL] case#{i}")
+            print("  input   :", repr(inp))
+            print("  expected:", repr(expected))
+            print("  actual  :", repr(actual))
+        else:
+            print(f"[PASS] case#{i}")
+    return all_passed
 
+# =========================================================================
+# 以下为你的作答区。你必须完整实现节点定义、反序列化(建表)、算法核心逻辑、以及序列化(输出结果)。
+# =========================================================================
 
-def solve() -> None:
-    data = sys.stdin.read().strip().split()
-    if not data:
-        return
-
-    n = int(data[0])
-    nums = list(map(int, data[1:1 + n]))
-    ans = reverse_list_core(nums)
-
-    if ans:
-        print(*ans)
-    else:
-        print()
-
+# TODO: 像你在 ACM / 笔试中一样，定义数据结构，实现完整的解析、执行和输出组装。
+def solver_stub(input_str: str) -> str:
+    """Read full input string, run the full solution, return formatted string."""
+    return ""
 
 if __name__ == "__main__":
-    solve()
+    # 你可以在本地开发时用 check() 验证你的 solver_stub:
+    check(solver_stub)
+

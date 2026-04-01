@@ -17,6 +17,6 @@
 
 ## 使用说明
 
-- 每个脚本都是 ACM 可提交结构：`solve()` + `sys.stdin` + `print()`。
-- 每个脚本保留 LeetCode 核心函数（`*_core`），你可只改核心逻辑。
-- `SAMPLE_CASES` 仅用于你本地查看样例，不参与在线评测。
+- 脚本提供基础字典 `SAMPLE_CASES` 与本地验证黑盒逻辑 `check()` 
+- 开发者必须实现全量 ACM 逻辑，包含 `ListNode`/`TreeNode` 定义、文本解析组装、算法逻辑封装。
+- 只需把你的完整逻辑写在 `solver_stub(input_str: str) -> str` 内，并运行测试。
