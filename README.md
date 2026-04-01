@@ -2,7 +2,18 @@
 
 该仓库用于面向笔试场景的 ACM 模式刷题。
 
-## 当前专题
-- 第一组：链表反转 + 双指针 + 滑动窗口
+## 目录结构（按题型分类）
 
-详见：`docs/acm-first-3-problems.md`
+- `problems/linked_list/`：链表题
+- `problems/two_pointers/`：双指针题
+- `problems/sliding_window/`：滑动窗口题
+
+## 当前已整理题目（每题一个脚本，仅含题目数据与样例）
+
+1. `problems/linked_list/lc0206_reverse_linked_list.py`
+2. `problems/two_pointers/lc0283_move_zeroes.py`
+3. `problems/sliding_window/lc0003_longest_substring_without_repeating.py`
+
+说明：
+- 每个脚本包含题号、题型、题意、输入输出描述、测试样例与边界数据。
+- ACM 格式求解代码预留给你自行补充。
