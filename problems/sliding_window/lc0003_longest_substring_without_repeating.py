@@ -1,90 +1,39 @@
-"""
-LeetCode 3 - Longest Substring Without Repeating Characters
-Category: sliding_window
-Difficulty: Medium
+"""LeetCode 3 - Longest Substring Without Repeating Characters (ACM style)."""
 
-This file stores training data for ACM-style practice.
-You can add solve() and input parsing by yourself.
-"""
+import sys
 
-PROBLEM_INFO = {
-    "leetcode_id": 3,
-    "title": "Longest Substring Without Repeating Characters",
-    "category": "sliding_window",
-    "difficulty": "Medium",
-    "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
-    "summary": "Return the length of the longest substring without repeating characters.",
-    "acm_input": [
-        "line1: string s",
-    ],
-    "acm_output": "one line with an integer (max length)",
-}
+LEETCODE_ID = 3
+TITLE = "Longest Substring Without Repeating Characters"
+CATEGORY = "sliding_window"
+DIFFICULTY = "Medium"
 
-TEST_CASES = [
-    {
-        "name": "example1",
-        "input": "abcabcbb\n",
-        "expected": "3\n",
-    },
-    {
-        "name": "example2",
-        "input": "bbbbb\n",
-        "expected": "1\n",
-    },
-    {
-        "name": "example3",
-        "input": "pwwkew\n",
-        "expected": "3\n",
-    },
-    {
-        "name": "empty",
-        "input": "\n",
-        "expected": "0\n",
-    },
-]
-
-EDGE_CASE_HINTS = [
-    "empty string",
-    "all characters are unique",
-    "all characters are the same",
+SAMPLE_CASES = [
+    ("abcabcbb\n", "3\n"),
+    ("bbbbb\n", "1\n"),
+    ("pwwkew\n", "3\n"),
+    ("\n", "0\n"),
 ]
 
 
-def _normalize_output(text: str) -> str:
-    # Ignore trailing spaces and final empty lines during comparison.
-    lines = [line.rstrip() for line in text.splitlines()]
-    while lines and lines[-1] == "":
-        lines.pop()
-    return "\n".join(lines)
+def length_of_longest_substring_core(s: str) -> int:
+    """LeetCode core logic placeholder: return max length without repeat."""
+    # TODO: Replace with your own LeetCode core implementation.
+    left = 0
+    last = {}
+    ans = 0
+    for right, ch in enumerate(s):
+        if ch in last and last[ch] >= left:
+            left = last[ch] + 1
+        last[ch] = right
+        ans = max(ans, right - left + 1)
+    return ans
 
 
-def check(solver) -> bool:
-    """Run built-in test cases against solver(input_str) -> output_str."""
-    all_passed = True
-    for i, case in enumerate(TEST_CASES, start=1):
-        actual = solver(case["input"])
-        expected = case["expected"]
-        if _normalize_output(actual) != _normalize_output(expected):
-            all_passed = False
-            print(f"[FAIL] case#{i} {case['name']}")
-            print("  input   :", repr(case["input"]))
-            print("  expected:", repr(expected))
-            print("  actual  :", repr(actual))
-        else:
-            print(f"[PASS] case#{i} {case['name']}")
-    return all_passed
-
-
-# TODO: Implement ACM solve() by yourself.
-# def solve() -> None:
-#     pass
-
-
-# TODO: Replace this stub with your own solver and run check(your_solver).
-def solver_stub(_: str) -> str:
-    return ""
+def solve() -> None:
+    s = sys.stdin.readline().rstrip("\n")
+    ans = length_of_longest_substring_core(s)
+    print(ans)
 
 
 if __name__ == "__main__":
-    print(PROBLEM_INFO["title"], "data is ready")
-    print("Run check with your own solver: check(your_solver)")
+    solve()

@@ -17,6 +17,6 @@
 
 ## 使用说明
 
-- 每个脚本内置 PROBLEM_INFO, TEST_CASES, EDGE_CASE_HINTS。
-- 每个脚本内置 check(solver) 用于样例校验。
-- 你只需实现 solver(input_str) -> output_str，然后调用 check(your_solver)。
+- 每个脚本都是 ACM 可提交结构：`solve()` + `sys.stdin` + `print()`。
+- 每个脚本保留 LeetCode 核心函数（`*_core`），你可只改核心逻辑。
+- `SAMPLE_CASES` 仅用于你本地查看样例，不参与在线评测。
