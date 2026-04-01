@@ -58,31 +58,23 @@ def check(solve_func) -> bool:
 # =========================================================================
 
 def solve():
-    # Recommended approach: Read all input stream into tokens
-    input_data = sys.stdin.read().split()
-    if not input_data:
+    # Read all tokens at once (handles any whitespace/newlines automatically)
+    data = sys.stdin.read().split()
+    if not data:
         return
         
-    iterator = iter(input_data)
-    
-    try:
-        n = int(next(iterator))
-        if n == 0:
-            print()
-            return
-            
-        nums = [int(next(iterator)) for _ in range(n)]
-    except StopIteration:
+    n = int(data[0])
+    if n == 0:
+        print()
         return
+        
+    # Simply slice the data array
+    nums = [int(x) for x in data[1:n+1]]
+    
+    print(nums)
 
     # Move Zeroes logic
-    slow = 0
-    for fast in range(len(nums)):
-        if nums[fast] != 0:
-            nums[slow], nums[fast] = nums[fast], nums[slow]
-            slow += 1
-            
-    print(" ".join(map(str, nums)))
+
 
 if __name__ == "__main__":
     # Local check (Mocking input/output):

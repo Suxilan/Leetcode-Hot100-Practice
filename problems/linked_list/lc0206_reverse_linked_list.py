@@ -65,21 +65,17 @@ class ListNode:
         self.next = next
 
 def solve():
-    # Best practice for ACM in Python: Read everything into an iterator
-    input_data = sys.stdin.read().split()
-    if not input_data:
+    # Read all tokens at once (handles any whitespace/newlines automatically)
+    data = sys.stdin.read().split()
+    if not data:
         return
-    iterator = iter(input_data)
-    
-    try:
-        n = int(next(iterator))
-        if n == 0:
-            print()
-            return
-            
-        vals = [int(next(iterator)) for _ in range(n)]
-    except StopIteration:
+        
+    n = int(data[0])
+    if n == 0:
+        print()
         return
+        
+    vals = [int(x) for x in data[1:n+1]]
 
     # Deserialize to Linked List
     dummy = ListNode(0)
