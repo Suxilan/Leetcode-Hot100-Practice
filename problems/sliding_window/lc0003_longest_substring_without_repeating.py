@@ -50,10 +50,41 @@ EDGE_CASE_HINTS = [
 ]
 
 
+def _normalize_output(text: str) -> str:
+    # Ignore trailing spaces and final empty lines during comparison.
+    lines = [line.rstrip() for line in text.splitlines()]
+    while lines and lines[-1] == "":
+        lines.pop()
+    return "\n".join(lines)
+
+
+def check(solver) -> bool:
+    """Run built-in test cases against solver(input_str) -> output_str."""
+    all_passed = True
+    for i, case in enumerate(TEST_CASES, start=1):
+        actual = solver(case["input"])
+        expected = case["expected"]
+        if _normalize_output(actual) != _normalize_output(expected):
+            all_passed = False
+            print(f"[FAIL] case#{i} {case['name']}")
+            print("  input   :", repr(case["input"]))
+            print("  expected:", repr(expected))
+            print("  actual  :", repr(actual))
+        else:
+            print(f"[PASS] case#{i} {case['name']}")
+    return all_passed
+
+
 # TODO: Implement ACM solve() by yourself.
 # def solve() -> None:
 #     pass
 
 
+# TODO: Replace this stub with your own solver and run check(your_solver).
+def solver_stub(_: str) -> str:
+    return ""
+
+
 if __name__ == "__main__":
     print(PROBLEM_INFO["title"], "data is ready")
+    print("Run check with your own solver: check(your_solver)")
