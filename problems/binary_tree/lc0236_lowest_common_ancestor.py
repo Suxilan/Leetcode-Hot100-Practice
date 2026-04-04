@@ -1,25 +1,37 @@
-"""LeetCode 283 - Move Zeroes (ACM style)."""
+"""LeetCode 236 - Lowest Common Ancestor of a Binary Tree (ACM style)."""
 
 import sys
 import io
 
-LEETCODE_ID = 283
-TITLE = "Move Zeroes"
-CATEGORY = "two_pointers"
-DIFFICULTY = "Easy"
+LEETCODE_ID = 236
+TITLE = "Lowest Common Ancestor of a Binary Tree"
+CATEGORY = "binary_tree"
+DIFFICULTY = "Medium"
 
+# Input format:
+# Line 1: space-separated tree node values in level-order. "null" represents an empty node.
+# Line 2: value of node p
+# Line 3: value of node q
+# Output format:
+# One integer, the value of the Lowest Common Ancestor node.
 SAMPLE_CASES = [
-    ("5\n0 1 0 3 12\n", "1 3 12 0 0\n"),
-    ("4\n0 0 0 0\n", "0 0 0 0\n"),
-    ("4\n1 2 3 4\n", "1 2 3 4\n"),
+    (
+        "3 5 1 6 2 0 8 null null 7 4\n5\n1\n",
+        "3\n"
+    ),
+    (
+        "3 5 1 6 2 0 8 null null 7 4\n5\n4\n",
+        "5\n"
+    ),
+    (
+        "1 2\n1\n2\n",
+        "1\n"
+    ),
 ]
 
 def check(solve_func) -> bool:
-    """Run built-in test cases automatically by mocking sys.stdin and sys.stdout."""
     def _normalize(text: str) -> str:
-        lines = [line.rstrip() for line in text.splitlines()]
-        while lines and lines[-1] == "":
-            lines.pop()
+        lines = [line.strip() for line in text.strip().splitlines() if line.strip()]
         return "\n".join(lines)
 
     all_passed = True
@@ -58,33 +70,16 @@ def check(solve_func) -> bool:
 # =========================================================================
 
 def solve():
-    # Read all tokens at once (handles any whitespace/newlines automatically)
     data = sys.stdin.read().split()
     if not data:
         return
         
-    n = int(data[0])
-    if n == 0:
-        print()
-        return
-        
-    # Simply slice the data array
-    nums = [int(x) for x in data[1:n+1]]
-
-    # Move Zeroes logic
-    slow = 0
-    for fast in range(n):
-        if nums[fast] != 0:
-            nums[slow], nums[fast] = nums[fast], nums[slow]
-            slow += 1
+    # 'data' has tree nodes, then p's value, then q's value
+    # You can extract p and q by taking data[-2] and data[-1], 
+    # and the tree sequence is data[:-2].
     
-    print(" ".join(str(n) for n in nums))
-
+    # TODO: Define TreeNode, build the tree, find the LCA, and print() its value
+    pass
 
 if __name__ == "__main__":
-    # Local check (Mocking input/output):
     check(solve)
-
-    # For real submission in platforms like Nowcoder, keep ONLY this:
-    # solve()
-

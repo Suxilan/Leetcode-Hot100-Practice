@@ -1,25 +1,35 @@
-"""LeetCode 283 - Move Zeroes (ACM style)."""
+"""LeetCode 124 - Binary Tree Maximum Path Sum (ACM style)."""
 
 import sys
 import io
 
-LEETCODE_ID = 283
-TITLE = "Move Zeroes"
-CATEGORY = "two_pointers"
-DIFFICULTY = "Easy"
+LEETCODE_ID = 124
+TITLE = "Binary Tree Maximum Path Sum"
+CATEGORY = "binary_tree"
+DIFFICULTY = "Hard"
 
+# Input format:
+# Line 1: space-separated tree node values in level-order. "null" represents an empty node.
+# Output format:
+# One integer representing the maximum path sum.
 SAMPLE_CASES = [
-    ("5\n0 1 0 3 12\n", "1 3 12 0 0\n"),
-    ("4\n0 0 0 0\n", "0 0 0 0\n"),
-    ("4\n1 2 3 4\n", "1 2 3 4\n"),
+    (
+        "1 2 3\n",
+        "6\n"
+    ),
+    (
+        "-10 9 20 null null 15 7\n",
+        "42\n"
+    ),
+    (
+        "-3\n",
+        "-3\n"
+    ),
 ]
 
 def check(solve_func) -> bool:
-    """Run built-in test cases automatically by mocking sys.stdin and sys.stdout."""
     def _normalize(text: str) -> str:
-        lines = [line.rstrip() for line in text.splitlines()]
-        while lines and lines[-1] == "":
-            lines.pop()
+        lines = [line.strip() for line in text.strip().splitlines() if line.strip()]
         return "\n".join(lines)
 
     all_passed = True
@@ -58,33 +68,12 @@ def check(solve_func) -> bool:
 # =========================================================================
 
 def solve():
-    # Read all tokens at once (handles any whitespace/newlines automatically)
     data = sys.stdin.read().split()
     if not data:
         return
         
-    n = int(data[0])
-    if n == 0:
-        print()
-        return
-        
-    # Simply slice the data array
-    nums = [int(x) for x in data[1:n+1]]
-
-    # Move Zeroes logic
-    slow = 0
-    for fast in range(n):
-        if nums[fast] != 0:
-            nums[slow], nums[fast] = nums[fast], nums[slow]
-            slow += 1
-    
-    print(" ".join(str(n) for n in nums))
-
+    # TODO: Define TreeNode, build the tree, compute maximum path sum and print()
+    pass
 
 if __name__ == "__main__":
-    # Local check (Mocking input/output):
     check(solve)
-
-    # For real submission in platforms like Nowcoder, keep ONLY this:
-    # solve()
-

@@ -1,25 +1,36 @@
-"""LeetCode 283 - Move Zeroes (ACM style)."""
+"""LeetCode 102 - Binary Tree Level Order Traversal (ACM style)."""
 
 import sys
 import io
 
-LEETCODE_ID = 283
-TITLE = "Move Zeroes"
-CATEGORY = "two_pointers"
-DIFFICULTY = "Easy"
+LEETCODE_ID = 102
+TITLE = "Binary Tree Level Order Traversal"
+CATEGORY = "binary_tree"
+DIFFICULTY = "Medium"
 
+# Input format:
+# Line 1: space-separated tree node values in level-order. "null" represents an empty node.
+# Output format:
+# Multiple lines, each line containing space-separated values for one level of the tree.
 SAMPLE_CASES = [
-    ("5\n0 1 0 3 12\n", "1 3 12 0 0\n"),
-    ("4\n0 0 0 0\n", "0 0 0 0\n"),
-    ("4\n1 2 3 4\n", "1 2 3 4\n"),
+    (
+        "3 9 20 null null 15 7\n",
+        "3\n9 20\n15 7\n"
+    ),
+    (
+        "1\n",
+        "1\n"
+    ),
+    (
+        "\n",
+        "\n"
+    ),
 ]
 
 def check(solve_func) -> bool:
     """Run built-in test cases automatically by mocking sys.stdin and sys.stdout."""
     def _normalize(text: str) -> str:
-        lines = [line.rstrip() for line in text.splitlines()]
-        while lines and lines[-1] == "":
-            lines.pop()
+        lines = [line.strip() for line in text.strip().splitlines() if line.strip()]
         return "\n".join(lines)
 
     all_passed = True
@@ -58,28 +69,14 @@ def check(solve_func) -> bool:
 # =========================================================================
 
 def solve():
-    # Read all tokens at once (handles any whitespace/newlines automatically)
+    # Read all tokens at once
     data = sys.stdin.read().split()
     if not data:
         return
         
-    n = int(data[0])
-    if n == 0:
-        print()
-        return
-        
-    # Simply slice the data array
-    nums = [int(x) for x in data[1:n+1]]
-
-    # Move Zeroes logic
-    slow = 0
-    for fast in range(n):
-        if nums[fast] != 0:
-            nums[slow], nums[fast] = nums[fast], nums[slow]
-            slow += 1
-    
-    print(" ".join(str(n) for n in nums))
-
+    # TODO: Define TreeNode, build the tree from level-order 'data' array, 
+    # run your level-order traversal, and print() each level on a new line.
+    pass
 
 if __name__ == "__main__":
     # Local check (Mocking input/output):
@@ -87,4 +84,3 @@ if __name__ == "__main__":
 
     # For real submission in platforms like Nowcoder, keep ONLY this:
     # solve()
-

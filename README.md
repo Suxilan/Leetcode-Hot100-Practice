@@ -7,6 +7,7 @@
 - `problems/linked_list/`：链表题
 - `problems/two_pointers/`：双指针题
 - `problems/sliding_window/`：滑动窗口题
+- `problems/binary_tree/`：二叉树题
 - `docs/`：题型整理与解法归纳
 
 ## Docs
@@ -19,6 +20,9 @@
 1. [problems/linked_list/lc0206_reverse_linked_list.py](problems/linked_list/lc0206_reverse_linked_list.py)
 2. [problems/two_pointers/lc0283_move_zeroes.py](problems/two_pointers/lc0283_move_zeroes.py)
 3. [problems/sliding_window/lc0003_longest_substring_without_repeating.py](problems/sliding_window/lc0003_longest_substring_without_repeating.py)
+4. [problems/binary_tree/lc0102_binary_tree_level_order_traversal.py](problems/binary_tree/lc0102_binary_tree_level_order_traversal.py)
+5. [problems/binary_tree/lc0236_lowest_common_ancestor.py](problems/binary_tree/lc0236_lowest_common_ancestor.py)
+6. [problems/binary_tree/lc0124_binary_tree_maximum_path_sum.py](problems/binary_tree/lc0124_binary_tree_maximum_path_sum.py)
 
 说明：
 - 每个脚本包含题号、题型、题意、输入输出描述、测试样例与边界数据。

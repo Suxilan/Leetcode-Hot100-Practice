@@ -15,6 +15,17 @@
 - LC3 Longest Substring Without Repeating Characters
 - 脚本: [problems/sliding_window/lc0003_longest_substring_without_repeating.py](../problems/sliding_window/lc0003_longest_substring_without_repeating.py)
 
+## 二叉树
+
+- LC102 Binary Tree Level Order Traversal
+- 脚本: [problems/binary_tree/lc0102_binary_tree_level_order_traversal.py](../problems/binary_tree/lc0102_binary_tree_level_order_traversal.py)
+
+- LC236 Lowest Common Ancestor of a Binary Tree
+- 脚本: [problems/binary_tree/lc0236_lowest_common_ancestor.py](../problems/binary_tree/lc0236_lowest_common_ancestor.py)
+
+- LC124 Binary Tree Maximum Path Sum
+- 脚本: [problems/binary_tree/lc0124_binary_tree_maximum_path_sum.py](../problems/binary_tree/lc0124_binary_tree_maximum_path_sum.py)
+
 ## 使用说明
 
 - 脚本内部自带 `SAMPLE_CASES` 并附带自动化 `check()` 测试机制。
