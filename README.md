@@ -8,6 +8,7 @@
 - `problems/two_pointers/`：双指针题
 - `problems/sliding_window/`：滑动窗口题
 - `problems/binary_tree/`：二叉树题
+- `problems/dynamic_programming/`：动态规划题
 - `docs/`：题型整理与解法归纳
 
 ## Docs
@@ -23,6 +24,9 @@
 4. [problems/binary_tree/lc0102_binary_tree_level_order_traversal.py](problems/binary_tree/lc0102_binary_tree_level_order_traversal.py)
 5. [problems/binary_tree/lc0236_lowest_common_ancestor.py](problems/binary_tree/lc0236_lowest_common_ancestor.py)
 6. [problems/binary_tree/lc0124_binary_tree_maximum_path_sum.py](problems/binary_tree/lc0124_binary_tree_maximum_path_sum.py)
+7. [problems/dynamic_programming/lc0070_climbing_stairs.py](problems/dynamic_programming/lc0070_climbing_stairs.py)
+8. [problems/dynamic_programming/lc0322_coin_change.py](problems/dynamic_programming/lc0322_coin_change.py)
+9. [problems/dynamic_programming/lc0300_longest_increasing_subsequence.py](problems/dynamic_programming/lc0300_longest_increasing_subsequence.py)
 
 说明：
 - 每个脚本包含题号、题型、题意、输入输出描述、测试样例与边界数据。

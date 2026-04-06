@@ -26,6 +26,17 @@
 - LC124 Binary Tree Maximum Path Sum
 - 脚本: [problems/binary_tree/lc0124_binary_tree_maximum_path_sum.py](../problems/binary_tree/lc0124_binary_tree_maximum_path_sum.py)
 
+## 动态规划
+
+- LC70 Climbing Stairs
+- 脚本: [problems/dynamic_programming/lc0070_climbing_stairs.py](../problems/dynamic_programming/lc0070_climbing_stairs.py)
+
+- LC322 Coin Change
+- 脚本: [problems/dynamic_programming/lc0322_coin_change.py](../problems/dynamic_programming/lc0322_coin_change.py)
+
+- LC300 Longest Increasing Subsequence
+- 脚本: [problems/dynamic_programming/lc0300_longest_increasing_subsequence.py](../problems/dynamic_programming/lc0300_longest_increasing_subsequence.py)
+
 ## 使用说明
 
 - 脚本内部自带 `SAMPLE_CASES` 并附带自动化 `check()` 测试机制。
