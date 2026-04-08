@@ -9,6 +9,12 @@
 - `problems/sliding_window/`：滑动窗口题
 - `problems/binary_tree/`：二叉树题
 - `problems/dynamic_programming/`：动态规划题
+- `problems/backtracking/`：回溯题
+- `problems/matrix/`：矩阵题
+- `problems/array/`：数组模拟题
+- `problems/monotonic_stack/`：单调栈题
+- `problems/binary_search/`：二分查找题
+- `problems/design/`：数据结构设计题
 - `docs/`：题型整理与解法归纳
 
 ## Docs
@@ -27,6 +33,16 @@
 7. [problems/dynamic_programming/lc0070_climbing_stairs.py](problems/dynamic_programming/lc0070_climbing_stairs.py)
 8. [problems/dynamic_programming/lc0322_coin_change.py](problems/dynamic_programming/lc0322_coin_change.py)
 9. [problems/dynamic_programming/lc0300_longest_increasing_subsequence.py](problems/dynamic_programming/lc0300_longest_increasing_subsequence.py)
+10. [problems/backtracking/lc0046_permutations.py](problems/backtracking/lc0046_permutations.py)
+11. [problems/backtracking/lc0078_subsets.py](problems/backtracking/lc0078_subsets.py)
+12. [problems/matrix/lc0200_number_of_islands.py](problems/matrix/lc0200_number_of_islands.py)
+13. [problems/array/lc0054_spiral_matrix.py](problems/array/lc0054_spiral_matrix.py)
+14. [problems/design/lc0146_lru_cache.py](problems/design/lc0146_lru_cache.py)
+15. [problems/two_pointers/lc0042_trapping_rain_water.py](problems/two_pointers/lc0042_trapping_rain_water.py)
+16. [problems/monotonic_stack/lc0739_daily_temperatures.py](problems/monotonic_stack/lc0739_daily_temperatures.py)
+17. [problems/monotonic_stack/lc0084_largest_rectangle_in_histogram.py](problems/monotonic_stack/lc0084_largest_rectangle_in_histogram.py)
+18. [problems/sliding_window/lc0239_sliding_window_maximum.py](problems/sliding_window/lc0239_sliding_window_maximum.py)
+19. [problems/binary_search/lc0033_search_in_rotated_sorted_array.py](problems/binary_search/lc0033_search_in_rotated_sorted_array.py)
 
 说明：
 - 每个脚本包含题号、题型、题意、输入输出描述、测试样例与边界数据。
