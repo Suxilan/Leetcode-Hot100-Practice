@@ -13,6 +13,9 @@
 - LC42 Trapping Rain Water
 - 脚本: [problems/two_pointers/lc0042_trapping_rain_water.py](../problems/two_pointers/lc0042_trapping_rain_water.py)
 
+- LC15 3Sum
+- 脚本: [problems/two_pointers/lc0015_3sum.py](../problems/two_pointers/lc0015_3sum.py)
+
 ## 滑动窗口
 
 - LC3 Longest Substring Without Repeating Characters
@@ -33,6 +36,11 @@
 
 - LC33 Search in Rotated Sorted Array
 - 脚本: [problems/binary_search/lc0033_search_in_rotated_sorted_array.py](../problems/binary_search/lc0033_search_in_rotated_sorted_array.py)
+
+## 前缀和
+
+- LC560 Subarray Sum Equals K
+- 脚本: [problems/prefix_sum/lc0560_subarray_sum_equals_k.py](../problems/prefix_sum/lc0560_subarray_sum_equals_k.py)
 
 ## 二叉树
 
@@ -73,6 +81,19 @@
 
 - LC54 Spiral Matrix
 - 脚本: [problems/array/lc0054_spiral_matrix.py](../problems/array/lc0054_spiral_matrix.py)
+
+- LC56 Merge Intervals
+- 脚本: [problems/array/lc0056_merge_intervals.py](../problems/array/lc0056_merge_intervals.py)
+
+## 堆与选择
+
+- LC215 Kth Largest Element in an Array
+- 脚本: [problems/heap/lc0215_kth_largest_element_in_an_array.py](../problems/heap/lc0215_kth_largest_element_in_an_array.py)
+
+## 栈
+
+- LC20 Valid Parentheses
+- 脚本: [problems/stack/lc0020_valid_parentheses.py](../problems/stack/lc0020_valid_parentheses.py)
 
 ## 设计
 

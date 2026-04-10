@@ -14,6 +14,9 @@
 - `problems/array/`：数组模拟题
 - `problems/monotonic_stack/`：单调栈题
 - `problems/binary_search/`：二分查找题
+- `problems/prefix_sum/`：前缀和题
+- `problems/heap/`：堆与选择题
+- `problems/stack/`：栈基础题
 - `problems/design/`：数据结构设计题
 - `docs/`：题型整理与解法归纳
 
@@ -43,6 +46,11 @@
 17. [problems/monotonic_stack/lc0084_largest_rectangle_in_histogram.py](problems/monotonic_stack/lc0084_largest_rectangle_in_histogram.py)
 18. [problems/sliding_window/lc0239_sliding_window_maximum.py](problems/sliding_window/lc0239_sliding_window_maximum.py)
 19. [problems/binary_search/lc0033_search_in_rotated_sorted_array.py](problems/binary_search/lc0033_search_in_rotated_sorted_array.py)
+20. [problems/two_pointers/lc0015_3sum.py](problems/two_pointers/lc0015_3sum.py)
+21. [problems/array/lc0056_merge_intervals.py](problems/array/lc0056_merge_intervals.py)
+22. [problems/prefix_sum/lc0560_subarray_sum_equals_k.py](problems/prefix_sum/lc0560_subarray_sum_equals_k.py)
+23. [problems/heap/lc0215_kth_largest_element_in_an_array.py](problems/heap/lc0215_kth_largest_element_in_an_array.py)
+24. [problems/stack/lc0020_valid_parentheses.py](problems/stack/lc0020_valid_parentheses.py)
 
 说明：
 - 每个脚本包含题号、题型、题意、输入输出描述、测试样例与边界数据。
