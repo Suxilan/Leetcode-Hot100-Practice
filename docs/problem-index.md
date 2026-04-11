@@ -5,6 +5,9 @@
 - LC206 Reverse Linked List
 - 脚本: [problems/linked_list/lc0206_reverse_linked_list.py](../problems/linked_list/lc0206_reverse_linked_list.py)
 
+- LC148 Sort List
+- 脚本: [problems/linked_list/lc0148_sort_list.py](../problems/linked_list/lc0148_sort_list.py)
+
 ## 双指针
 
 - LC283 Move Zeroes
@@ -36,6 +39,9 @@
 
 - LC33 Search in Rotated Sorted Array
 - 脚本: [problems/binary_search/lc0033_search_in_rotated_sorted_array.py](../problems/binary_search/lc0033_search_in_rotated_sorted_array.py)
+
+- LC4 Median of Two Sorted Arrays
+- 脚本: [problems/binary_search/lc0004_median_of_two_sorted_arrays.py](../problems/binary_search/lc0004_median_of_two_sorted_arrays.py)
 
 ## 前缀和
 
@@ -84,6 +90,9 @@
 
 - LC56 Merge Intervals
 - 脚本: [problems/array/lc0056_merge_intervals.py](../problems/array/lc0056_merge_intervals.py)
+
+- LC31 Next Permutation
+- 脚本: [problems/array/lc0031_next_permutation.py](../problems/array/lc0031_next_permutation.py)
 
 ## 堆与选择
 

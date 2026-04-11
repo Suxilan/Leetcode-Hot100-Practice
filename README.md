@@ -51,6 +51,9 @@
 22. [problems/prefix_sum/lc0560_subarray_sum_equals_k.py](problems/prefix_sum/lc0560_subarray_sum_equals_k.py)
 23. [problems/heap/lc0215_kth_largest_element_in_an_array.py](problems/heap/lc0215_kth_largest_element_in_an_array.py)
 24. [problems/stack/lc0020_valid_parentheses.py](problems/stack/lc0020_valid_parentheses.py)
+25. [problems/binary_search/lc0004_median_of_two_sorted_arrays.py](problems/binary_search/lc0004_median_of_two_sorted_arrays.py)
+26. [problems/array/lc0031_next_permutation.py](problems/array/lc0031_next_permutation.py)
+27. [problems/linked_list/lc0148_sort_list.py](problems/linked_list/lc0148_sort_list.py)
 
 说明：
 - 每个脚本包含题号、题型、题意、输入输出描述、测试样例与边界数据。
